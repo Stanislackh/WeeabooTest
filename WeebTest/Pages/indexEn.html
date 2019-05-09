@@ -38,7 +38,7 @@
             so)
         </td>
         <td><input class="reponse" type="CheckBox" value="2">+2 Discuss anime in normal everyday talk</td>
-        <td><input class="reponse" type="CheckBox" value="1">+1 Are studying/have learnd Japanese</td>
+        <td><input class="reponse" type="CheckBox" value="1">+1 Are studying/have learned Japanese</td>
         <td><input class="reponse" type="CheckBox" value="2">+2 Refer to animes by their Japanese titles</td>
         <td><input class="reponse" type="CheckBox" value="3">+3 Watch shonen/violent/action anime</td>
     </tr>
@@ -55,7 +55,7 @@
     <tr>
         <td><input class="reponse" type="CheckBox" value="3">+3 Read manga/ watch anime weekly</td>
         <td><input class="reponse" type="CheckBox" value="3">+3 Have an anime profile picture/name on one or more
-            wabsite
+            website
         </td>
         <td><input class="reponse" type="CheckBox" value="3">+3 Went to or want to go to an anime Con</td>
         <td><input class="reponse" type="CheckBox" value="3">+3 Anime and manga mean more to you tanh just
@@ -76,7 +76,7 @@
     </tr>
     <tr>
         <td><input class="reponse" type="CheckBox" value="2">+2 Watched anime that is considered unpopular</td>
-        <td><input class="reponse" type="CheckBox" value="3">+3 Actively try to get onther people interested in anime
+        <td><input class="reponse" type="CheckBox" value="3">+3 Actively try to get another people interested in anime
         </td>
         <td><input class="reponse" type="CheckBox" value="4">+4 Own a Dakimakura (body pillow) (ironically or not)</td>
         <td><input class="reponse" type="CheckBox" value="4">+4 Think Japan is a superior country in tems os
@@ -94,7 +94,7 @@
         <td><input class="reponse" type="CheckBox" value="3">+3 Have cosplayed ans an anime character (or enjoy cosplay
             content)
         </td>
-        <td><input class="reponse" type="CheckBox" value="4">+4 Forsake your contry and all others in favor of Japan
+        <td><input class="reponse" type="CheckBox" value="4">+4 Forsake your country and all others in favor of Japan
         </td>
         <td><input class="reponse" type="CheckBox" value="2">+2 Listen to J-Core and J-EDM</td>
     </tr>
@@ -113,7 +113,7 @@
         <td><input class="reponse" type="CheckBox" value="3">+3 Discuss/post anime online despite being irrelevant
             and/or not wanted
         </td>
-        <td><input class="reponse" type="CheckBox" value="5">+5 Spend more time consuming anime content than anithing
+        <td><input class="reponse" type="CheckBox" value="5">+5 Spend more time consuming anime content than anything
             else
         </td>
         <td><input class="reponse" type="CheckBox" value="5">+5 Have downplayed Japans warcrimes</td>
@@ -129,7 +129,7 @@
         <td><input class="reponse" type="CheckBox" value="3">+3 Listen to anime openings/endings/OSTs</td>
     </tr>
     <tr>
-        <td><input class="reponse" type="CheckBox" value="3">+3 Have abode average knowledge of anime related topics
+        <td><input class="reponse" type="CheckBox" value="3">+3 Have above average knowledge of anime related topics
         </td>
         <td><input class="reponse" type="CheckBox" value="5">+5 Your identity and personality revolve around anime
             related content
@@ -175,15 +175,15 @@
     SCORE: 0/178
 </div>
 <script>
-    function calcul(){
+    function calcul() {
         var reponse = document.getElementsByClassName("reponse");
         var result = 0;
-        for(var i = 0 ; i < reponse.length ; i++){
-            if(reponse[i].checked){
+        for (var i = 0; i < reponse.length; i++) {
+            if (reponse[i].checked) {
                 result += parseInt(reponse[i].value);
             }
         }
-        document.getElementById('result').innerHTML = "SCORE: "+  result + "/178";
+        document.getElementById('result').innerHTML = "SCORE: " + result + "/178";
     }
 </script>
 </body>
