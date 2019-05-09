@@ -11,10 +11,6 @@
 <h1>THE ULTIMATE WEEABOO TEST</h1>
 <h2>Recreated by Slackh and Adrameleck</h2>
 
-<p>
-    SCORE: /178
-</p>
-
 <table id="tab" class="table table-bordered">
     <thead>
     <th scope="col" class="text-danger">INTEREST</th>
@@ -174,6 +170,21 @@
     </tr>
     </tbody>
 </table>
-
+<input type="button" value="Calculer Niveau de weeb!" onClick="return calcul()"/>
+<div id="result">
+    SCORE: 0/178
+</div>
+<script>
+    function calcul(){
+        var reponse = document.getElementsByClassName("reponse");
+        var result = 0;
+        for(var i = 0 ; i < reponse.length ; i++){
+            if(reponse[i].checked){
+                result += parseInt(reponse[i].value);
+            }
+        }
+        document.getElementById('result').innerHTML = "SCORE: "+  result + "/178";
+    }
+</script>
 </body>
 </html>
