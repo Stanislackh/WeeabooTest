@@ -8,134 +8,170 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="Fonctions.js"></script>
 </head>
-<body>
+<body class="p-3 mb-2 bg-dark text-light">
 <h1>THE ULTIMATE WEEABOO TEST</h1>
-<h2>Recreated by Slackh</h2>
+<h2>Recreated by Slackh and Adrameleck</h2>
 
 <p>
-    SCORE:
-    <input type="text" id="text" value="0" readonly="true"
-           style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px">
-    /178
+    SCORE: /178
 </p>
 
-<script language="javascript">
-    document.getElementById('text').value = valeur;
-</script>
-
-<table class="table table-bordered">
+<table id="tab" class="table table-bordered">
     <thead>
-    <th scope="col">INTEREST</th>
-    <th scope="col">SOCIAL</th>
-    <th scope="col">PHYSICAL</th>
-    <th scope="col">DEDICATION</th>
-    <th scope="col">BONUS ROUND</th>
+    <th scope="col" class="text-danger">INTEREST</th>
+    <th scope="col" class="text-primary">SOCIAL</th>
+    <th scope="col" class="text-success">PHYSICAL</th>
+    <th scope="col" class="text-warning">DEDICATION</th>
+    <th scope="col" class="text-info">BONUS ROUND</th>
     </thead>
     <tbody>
     <tr>
-        <td>+1 Watched the popular animes lie Yu-Gi-Oh, Digimon, DBZ, Pokemon, ect.. as a kid</td>
-        <td>+2 Frequent a community dedicated to discussing anime</td>
-        <td>+1 Visited/lived or want to visit/live in Japan</td>
-        <td>+1 Actively seek out Japanese culture</td>
-        <td>+3 Watch moe/kawaii anime</td>
+        <td><input class="reponse" type="CheckBox" id="interest" value="1">+1 Watched the popular animes lie Yu-Gi-Oh,
+            Digimon, DBZ, Pokemon, ect.. as a kid
+        </td>
+        <td><input class="reponse" type="CheckBox" id="social" value="2">+2 Frequent a community dedicated to discussing
+            anime
+        </td>
+        <td><input class="reponse" type="CheckBox" id="physical" value="1">+1 Visited/lived or want to visit/live in
+            Japan
+        </td>
+        <td><input class="reponse" type="CheckBox" id="dedication" value="1">+1 Actively seek out Japanese culture</td>
+        <td><input class="reponse" type="CheckBox" id="bonus" value="3">+3 Watch moe/kawaii anime</td>
     </tr>
     <tr>
-        <td>+2 Consumed manga/anime recently (within the past month or so)</td>
-        <td>+2 Discuss anime in normal everyday talk</td>
-        <td>+1 Are studying/have learnd Japanese</td>
-        <td>+2 Refer to animes by their Japanese titles</td>
-        <td>+3 Watch shonen/violent/action anime</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Consumed manga/anime recently (within the past month or
+            so)
+        </td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Discuss anime in normal everyday talk</td>
+        <td><input class="reponse" type="CheckBox" value="1">+1 Are studying/have learnd Japanese</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Refer to animes by their Japanese titles</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Watch shonen/violent/action anime</td>
     </tr>
     <tr>
-        <td>+2 Enjoy cutsie drawings and artstyles</td>
-        <td>+3 Have a variety of anime emotes that you use on Twitch/Discord ect...</td>
-        <td>+2 Own normal anime related merch (Shirt/poster ect...)</td>
-        <td>+2 Prefer subs over dubs</td>
-        <td>+3 Watch Harem/fan service heavy anime</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Enjoy cutsie drawings and artstyles</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Have a variety of anime emotes that you use on
+            Twitch/Discord ect...
+        </td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Own normal anime related merch (Shirt/poster ect...)
+        </td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Prefer subs over dubs</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Watch Harem/fan service heavy anime</td>
     </tr>
     <tr>
-        <td>+3 Read manga/ watch anime weekly</td>
-        <td>+3 Have an anime profile picture/name on one or more wabsite</td>
-        <td>+3 Went to or want to go to an anime Con</td>
-        <td>+3 Anime and manga mean more to you tanh just entertainement</td>
-        <td>+3 Watch slice of life/Comedy anime</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Read manga/ watch anime weekly</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Have an anime profile picture/name on one or more
+            wabsite
+        </td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Went to or want to go to an anime Con</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Anime and manga mean more to you tanh just
+            entertainement
+        </td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Watch slice of life/Comedy anime</td>
     </tr>
     <tr>
-        <td>+2 Keep up to date on news anime/manga</td>
-        <td>+3 Have a collection of anime reaction images, gifs or meme</td>
-        <td>+3 Spend at least 30$ on anime-related goods per month</td>
-        <td>+3 Don't like to interacting with unknowledgeable anime fans</td>
-        <td>+3 Watch anime commentary channels (i.e The anime man ...)</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Keep up to date on news anime/manga</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Have a collection of anime reaction images, gifs or meme
+        </td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Spend at least 30$ on anime-related goods per month</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Don't like to interacting with unknowledgeable anime
+            fans
+        </td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Watch anime commentary channels (i.e The anime man ...)
+        </td>
     </tr>
     <tr>
-        <td>+2 Watched anime that is considered unpopular</td>
-        <td>+3 Actively try to get onther people interested in anime</td>
-        <td>+4 Own a Dakimakura (body pillow) (ironically or not)</td>
-        <td>+4 Think Japan is a superior country in tems os entertainement</td>
-        <td>+2 Watch/Subscribed to weeb streamer on Twitch</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Watched anime that is considered unpopular</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Actively try to get onther people interested in anime
+        </td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Own a Dakimakura (body pillow) (ironically or not)</td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Think Japan is a superior country in tems os
+            entertainement
+        </td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Watch/Subscribed to weeb streamer on Twitch</td>
     </tr>
     <tr>
-        <td>+2 Have grown attracted to an anime character or have a "best girl</td>
-        <td>+2 Have ever used Japanese slang, words, phrases, or references</td>
-        <td>+3 Have cosplayed ans an anime character (or enjoy cosplay content)</td>
-        <td>+4 Forsake your contry and all others in favor of Japan</td>
-        <td>+2 Listen to J-Core and J-EDM</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Have grown attracted to an anime character or have a
+            "best girl
+        </td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Have ever used Japanese slang, words, phrases, or
+            references
+        </td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Have cosplayed ans an anime character (or enjoy cosplay
+            content)
+        </td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Forsake your contry and all others in favor of Japan
+        </td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Listen to J-Core and J-EDM</td>
     </tr>
     <tr>
-        <td>+3 Enjoy loli content (no sexualization)</td>
-        <td>+3 Enjoy, talk or joke about traps and futanari (ironically or otherwise)</td>
-        <td>+4 Own a replica or real Katana/other Japanese weapon</td>
-        <td>+5 Have a skewed view of Japan due to anime</td>
-        <td>+2 Listen to J-Pop or Music with loli singing</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Enjoy loli content (no sexualization)</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Enjoy, talk or joke about traps and futanari (ironically
+            or otherwise)
+        </td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Own a replica or real Katana/other Japanese weapon</td>
+        <td><input class="reponse" type="CheckBox" value="5">+5 Have a skewed view of Japan due to anime</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Listen to J-Pop or Music with loli singing</td>
     </tr>
     <tr>
-        <td>+3 have watched hentai or consumed erotic anime content</td>
-        <td>+3 Discuss/post anime online despite being irrelevant and/or not wanted</td>
-        <td>+5 Spend more time consuming anime content than anithing else</td>
-        <td>+5 Have downplayed Japans warcrimes</td>
-        <td>+3 Listen to nightcore or vocaloid</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 have watched hentai or consumed erotic anime content
+        </td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Discuss/post anime online despite being irrelevant
+            and/or not wanted
+        </td>
+        <td><input class="reponse" type="CheckBox" value="5">+5 Spend more time consuming anime content than anithing
+            else
+        </td>
+        <td><input class="reponse" type="CheckBox" value="5">+5 Have downplayed Japans warcrimes</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Listen to nightcore or vocaloid</td>
     </tr>
     <tr>
-        <td>+4 Have a fetish for Hentai/Anime erotica</td>
-        <td>+4 Get angry at people who don't like anime</td>
-        <td>+4 Unironically have a Waifu/Husbando instead of trying to find a partner</td>
-        <td>+4 Wish you were born Japanese</td>
-        <td>+3 Listen to anime openings/endings/OSTs</td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Have a fetish for Hentai/Anime erotica</td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Get angry at people who don't like anime</td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Unironically have a Waifu/Husbando instead of trying to
+            find a partner
+        </td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Wish you were born Japanese</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Listen to anime openings/endings/OSTs</td>
     </tr>
     <tr>
-        <td>+3 Have abode average knowledge of anime related topics</td>
-        <td>+5 Your identity and personality revolve around anime related content</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Have abode average knowledge of anime related topics
+        </td>
+        <td><input class="reponse" type="CheckBox" value="5">+5 Your identity and personality revolve around anime
+            related content
+        </td>
         <td></td>
-        <td>+4 Anime has given you unrealistically high standards for the opposite sex</td>
-        <td>+2 Have played anime-esque games</td>
+        <td><input class="reponse" type="CheckBox" value="4">+4 Anime has given you unrealistically high standards for
+            the opposite sex
+        </td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Have played anime-esque games</td>
     </tr>
     <tr>
-        <td>+2 Pay attention to seasonal anime</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Pay attention to seasonal anime</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>+3 Have played visual novels</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Have played visual novels</td>
     </tr>
     <tr>
-        <td>+3 Consume doujin material</td>
+        <td><input class="reponse" type="CheckBox" value="3">+3 Consume doujin material</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>+2 Have played music/rhythm games (Touhou, OSU, ...)</td>
+        <td><input class="reponse" type="CheckBox" value="2">+2 Have played music/rhythm games (Touhou, OSU, ...)</td>
     </tr>
     <tr>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td>+6 Have ever lewded character that are < 15</td>
+        <td><input class="reponse" type="CheckBox" value="6">+6 Have ever lewded character that are < 15</td>
     </tr>
     <tr>
-        <td>Questions agreed:</td>
-        <td>Questions agreed:</td>
-        <td>Questions agreed:</td>
-        <td>Questions agreed:</td>
-        <td>Questions agreed:</td>
+        <td class="text-danger">Questions agreed:</td>
+        <td class="text-primary">Questions agreed:</td>
+        <td class="text-success">Questions agreed:</td>
+        <td class="text-warning">Questions agreed:</td>
+        <td class="text-info">Questions agreed:</td>
     </tr>
     </tbody>
 </table>
